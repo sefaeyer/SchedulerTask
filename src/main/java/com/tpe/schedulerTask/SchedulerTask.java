@@ -17,7 +17,7 @@ public class SchedulerTask {
     @Value("${app.weather.api.key}")
     private String apiKey;
 
-    @Scheduled(fixedRate = 10000) // On saniyede bir bu method calissin
+    @Scheduled(fixedRate = 10000) // Her 10 saniyede bir bu method calissin
     public void HavaDurumuBilgisiniGetir(){
 
         String url = "https://api.openweathermap.org/data/2.5/weather?q=Istanbul&appid="+apiKey+"&units=metric&lang=tr";
