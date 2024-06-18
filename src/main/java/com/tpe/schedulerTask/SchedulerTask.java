@@ -11,8 +11,8 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class SchedulerTask {
 
-    private static final Logger log = LoggerFactory.getLogger(SchedulerTask.class);
-    private final RestTemplate restTemplate= new RestTemplate();
+    private static final Logger log = LoggerFactory.getLogger(SchedulerTask.class); // console da gorunmesi icin
+    private final RestTemplate restTemplate= new RestTemplate(); // client mis gibi davranip farkli api lere request gondermeye yariyor
 
     @Value("${app.weather.api.key}")
     private String apiKey;

@@ -8,7 +8,7 @@ import lombok.Setter;
 
 import java.util.List;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties(ignoreUnknown = true) // ihtiyacim olmayan verileri gormezden gel
 @Getter
 @Setter
 @AllArgsConstructor
